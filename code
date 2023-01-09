@@ -1,0 +1,17 @@
+'''
+
+Find the area of any triangle by entering the values a, b, and c
+
+'''
+
+import math
+
+a = int(input("Enter the value for a: "))              # The values are in centimeters
+b = int(input("Enter the value for b: "))
+c = int(input("Enter the value for c: "))
+
+area = 1 / 4 * math.sqrt(4 *
+                         (a**2 * b**2 + a**2 * c**2 + b**2 * c**2) -
+                         (a**2 + b**2 + c**2)**2
+                         )
+print(f"The area is {area}")
